@@ -6,10 +6,17 @@ import { AppComponent } from './app.component';
 
 import { MeuPrimeiroComponent } from './meu-primeiro-component/meu-primeiro.component';
 import { MeuPrimeiroComponentCliComponent } from './meu-primeiro-component-cli/meu-primeiro-component-cli.component';
+import { CursosModule } from './cursos/cursos.module';
+import { CursosDetalhesComponent } from './cursos-detalhes/cursos-detalhes.component';
 
 @NgModule({
-  declarations: [AppComponent, MeuPrimeiroComponent, MeuPrimeiroComponentCliComponent],
-  imports: [BrowserModule, AppRoutingModule],
+  declarations: [
+    AppComponent,
+    MeuPrimeiroComponent,
+    MeuPrimeiroComponentCliComponent,
+    CursosDetalhesComponent,
+  ],
+  imports: [BrowserModule, AppRoutingModule, CursosModule],
   providers: [],
   bootstrap: [AppComponent],
 })
