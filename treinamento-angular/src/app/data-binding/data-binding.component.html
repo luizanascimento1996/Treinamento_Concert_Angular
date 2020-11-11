@@ -1,7 +1,77 @@
-<section class="property-binding"></section>
-
-<article>
+<!--<article>
   <h3>Interpolação/Interpolation</h3>
   <p>String realizada com interpolação: {{ nome }}</p>
   <p>Resultado de 1 + 1 é: {{ 1 + 1 }}</p>
+  <p>Resultado de 1 + 1 não é: {{ 1 + 1 + getValor() }}</p>
+  <p>
+    Curso de Angular e gosto do curso: {{ cursoAngular && getCurtirCurso() }}
+  </p>
 </article>
+
+<article>
+  <h3>Property Binding</h3>
+  <img src="{{ urlImage }}" />
+  <img [src]="urlImage" />
+  <img bind-src="urlImage" />
+</article>
+
+<article>
+  <h3>Class e Style Binding</h3>
+  <div>
+    Selecione uma classe:
+    <select #classe (change)="(0)">
+      <option value="alert-success">Sucesso</option>
+      <option value="alert-info">Info</option>
+      <option value="alert-warning">Alerta</option>
+      <option value="alert-danger">Erro</option>
+    </select>
+
+    <br /><br />
+
+    <div>
+      <div
+        class="alert"
+        role="alert"
+        [class.alert-success]="classe.value == 'alert-success'"
+        [style.display]="classe.value == 'alert-success' ? 'block' : 'none'"
+      >
+        Success
+      </div>
+      <div
+        class="alert"
+        role="alert"
+        [class.alert-info]="classe.value == 'alert-info'"
+        [style.display]="classe.value == 'alert-info' ? 'block' : 'none'"
+      >
+        Info
+      </div>
+      <div
+        class="alert"
+        role="alert"
+        [class.alert-danger]="classe.value == 'alert-danger'"
+        [style.display]="classe.value == 'alert-danger' ? 'block' : 'none'"
+      >
+        Danger
+      </div>
+      <div
+        class="alert"
+        role="alert"
+        [class.alert-warning]="classe.value == 'alert-warning'"
+        [style.display]="classe.value == 'alert-warning' ? 'block' : 'none'"
+      >
+        Warning
+      </div>
+    </div>
+  </div>
+</article>-->
+
+<section class="event-binding">
+  <article>
+    <h3>Event binding</h3>
+    <div>
+      <button (click)="botaoClicado()" class="btn btn-primary">
+        Clique-me
+      </button>
+    </div>
+  </article>
+</section>
