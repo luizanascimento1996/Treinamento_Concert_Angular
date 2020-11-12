@@ -63,7 +63,7 @@
       </div>
     </div>
   </div>
-</article>-->
+</article>
 
 <section class="event-binding">
   <article>
@@ -73,5 +73,45 @@
         Clique-me
       </button>
     </div>
+
+    <br /><br />
+
+    <input
+      type="text"
+      (keyup)="onKeyUp($event)"
+      (keyup.enter)="salvarValor(campoInput.value)"
+      #campoInput
+    />
+
+    <p>Valor Atual: {{ valorAtual }}</p>
+    <p>Valor Salvo: {{ valorSalvo }}</p>
+
+    <br />
+    <span
+      (mouseover)="onMouseOverOut()"
+      (mouseout)="onMouseOverOut()"
+      [class.highlight]="isMouseOver"
+      >Passe o Mouse sobre mim
+    </span>
   </article>
-</section>
+</section> 
+
+<section class="two-way-binding">
+  <article>
+    <h3>Two Way Data Binding</h3>
+    <div>
+      <input type="text" [value]="nome" (input)="nome = $event.target.value" />
+      <input type="text" [ngModel]="nome" (ngModelChange)="nome = $event" />
+      <input type="text" [(ngModel)]="nome" />
+      <input type="text" bindon-ngModel="nome" />
+
+      <p>Você digitou o nome: {{ nome }}</p>
+
+      <div>
+        <p>Meu nome é {{ pessoa.nome }} e tenho {{ pessoa.idade }} anos.</p>
+        <input type="text" [(ngModel)]="pessoa.nome" />
+        <input type="text" [(ngModel)]="pessoa.idade" />
+      </div>
+    </div>
+  </article>
+</section> -->
