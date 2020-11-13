@@ -1,5 +1,6 @@
 import {
   Component,
+  ElementRef,
   EventEmitter,
   Input,
   OnInit,
@@ -17,18 +18,19 @@ export class OutputPropertyComponent implements OnInit {
 
   @Output() mudouValor = new EventEmitter();
 
+  @ViewChild('campoInput') campoValorInput: ElementRef;
+
   constructor() {}
 
   ngOnInit(): void {}
 
   incremental() {
-    console.log(this.campoValorInput);
-
-    this.value++;
+    console.log(this.campoValorInput.nativeElement.value);
+    this.campoValorInput.nativeElement.value++;
     this.mudouValor.emit({ novoValor: this.value });
   }
   decremental() {
-    this.value--;
+    this.campoValorInput.nativeElement.value--;
     this.mudouValor.emit({ novoValor: this.value });
   }
 }
