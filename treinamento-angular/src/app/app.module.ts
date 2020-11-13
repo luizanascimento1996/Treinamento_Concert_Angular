@@ -11,6 +11,7 @@ import { FormsModule } from '@angular/forms';
 import { InputPropertyComponent } from './input-property/input-property.component';
 import { OutputPropertyComponent } from './output-property/output-property.component';
 import { CicloComponent } from './ciclo/ciclo.component';
+import { DiretivaIfComponent } from './diretiva-if/diretiva-if.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { CicloComponent } from './ciclo/ciclo.component';
     InputPropertyComponent,
     OutputPropertyComponent,
     CicloComponent,
+    DiretivaIfComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, CursosModule, FormsModule],
   providers: [],
