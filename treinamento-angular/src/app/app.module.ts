@@ -12,6 +12,8 @@ import { InputPropertyComponent } from './input-property/input-property.componen
 import { OutputPropertyComponent } from './output-property/output-property.component';
 import { CicloComponent } from './ciclo/ciclo.component';
 import { DiretivaIfComponent } from './diretiva-if/diretiva-if.component';
+import { DiretivaSwitchComponent } from './diretiva-switch/diretiva-switch.component';
+import { DiretivaForComponent } from './diretiva-for/diretiva-for.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +25,8 @@ import { DiretivaIfComponent } from './diretiva-if/diretiva-if.component';
     OutputPropertyComponent,
     CicloComponent,
     DiretivaIfComponent,
+    DiretivaSwitchComponent,
+    DiretivaForComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, CursosModule, FormsModule],
   providers: [],
