@@ -16,6 +16,7 @@ import { DiretivaIfComponent } from './diretiva-if/diretiva-if.component';
 import { DiretivaSwitchComponent } from './diretiva-switch/diretiva-switch.component';
 import { DiretivaForComponent } from './diretiva-for/diretiva-for.component';
 import { DiretivaNgclassComponent } from './diretiva-ngclass/diretiva-ngclass.component';
+import { DiretivaNgstyleComponent } from './diretiva-ngstyle/diretiva-ngstyle.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { DiretivaNgclassComponent } from './diretiva-ngclass/diretiva-ngclass.co
     DiretivaSwitchComponent,
     DiretivaForComponent,
     DiretivaNgclassComponent,
+    DiretivaNgstyleComponent,
   ],
   imports: [
     BrowserModule,
