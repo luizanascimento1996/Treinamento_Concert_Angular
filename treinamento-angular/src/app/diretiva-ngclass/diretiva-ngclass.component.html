@@ -1,8 +1,20 @@
 <h1>
   <i
-    class="far"
-    [class.fa-star]="!meuFavorito"
-    [class.fa-star]="meuFavorito"
+    class="fa fa-star"
+    [class.green]="!meuFavorito"
+    [class.yellow]="meuFavorito"
+    (click)="onClick()"
+  >
+  </i>
+</h1>
+
+<h1>
+  <i
+    class="fa fa-star"
+    [ngClass]="{
+      green: !meuFavorito,
+      yellow: meuFavorito
+    }"
     (click)="onClick()"
   >
   </i>
