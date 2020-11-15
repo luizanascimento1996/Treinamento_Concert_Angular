@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -28,7 +29,13 @@ import { DiretivaForComponent } from './diretiva-for/diretiva-for.component';
     DiretivaSwitchComponent,
     DiretivaForComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, CursosModule, FormsModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    CursosModule,
+    FormsModule,
+    CommonModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
