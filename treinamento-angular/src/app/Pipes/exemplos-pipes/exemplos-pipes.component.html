@@ -8,3 +8,11 @@
 <p>Url: {{ livro.url }}</p>
 <br />
 <p>Livro: {{ livro | json }}</p>
+
+<h5>Pipes: Criando um Pipe "Puro"</h5>
+
+<ul>
+  <li *ngFor="let liv of livros" | filtroArray >
+    {{ liv }}
+  </li>
+</ul>

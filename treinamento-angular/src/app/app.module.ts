@@ -34,6 +34,7 @@ import { LogServiceService } from './shared/log-service.service';
 import { ExemplosPipesComponent } from './Pipes/exemplos-pipes/exemplos-pipes.component';
 import { CamelCasePipe } from './Pipes/camel-case.pipe';
 import { SettingsService } from './Pipes/settings.service';
+import { FiltroArrayPipe } from './Pipes/filtro-array.pipe';
 
 @NgModule({
   declarations: [
@@ -60,6 +61,7 @@ import { SettingsService } from './Pipes/settings.service';
     CriarCursoComponent,
     ExemplosPipesComponent,
     CamelCasePipe,
+    FiltroArrayPipe,
   ],
   imports: [
     BrowserModule,
