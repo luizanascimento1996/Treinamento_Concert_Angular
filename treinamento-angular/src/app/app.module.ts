@@ -28,6 +28,7 @@ import { CursosComponent } from './Servicos/cursos/cursos.component';
 import { CriarCursoComponent } from './Servicos/criar-curso/criar-curso.component';
 import { CursosService2 } from './Servicos/cursos.service';
 import { LogServiceService } from './shared/log-service.service';
+import { ExemplosPipesComponent } from './Pipes/exemplos-pipes/exemplos-pipes.component';
 
 @NgModule({
   declarations: [
@@ -52,6 +53,7 @@ import { LogServiceService } from './shared/log-service.service';
     NgElseDirective,
     CursosComponent,
     CriarCursoComponent,
+    ExemplosPipesComponent,
   ],
   imports: [
     BrowserModule,
