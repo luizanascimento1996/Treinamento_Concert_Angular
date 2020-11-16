@@ -27,6 +27,7 @@ import { NgElseDirective } from './shared/ng-else.directive';
 import { CursosComponent } from './Servicos/cursos/cursos.component';
 import { CriarCursoComponent } from './Servicos/criar-curso/criar-curso.component';
 import { CursosService2 } from './Servicos/cursos.service';
+import { LogServiceService } from './shared/log-service.service';
 
 @NgModule({
   declarations: [
@@ -59,7 +60,7 @@ import { CursosService2 } from './Servicos/cursos.service';
     FormsModule,
     CommonModule,
   ],
-  providers: [CursosService2],
+  providers: [CursosService2, LogServiceService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

@@ -1,14 +1,26 @@
-import { Injectable } from '@angular/core';
+import { EventEmitter, Injectable } from '@angular/core';
+
+import { LogServiceService } from './../shared/log-service.service';
 
 @Injectable({
   providedIn: 'root',
 })
 export class CursosService2 {
-  constructor() {
+  emitirCursoCriado = new EventEmitter<string>();
+  private _cursos: string[] = ['Angular', 'JAVA', 'C#', 'Python'];
+
+  constructor(private _logService: LogServiceService) {
     console.log('Cursos Service');
   }
 
   getCursos() {
-    return ['Angular', 'JAVA', 'C#', 'Python'];
+    this._logService.consoleLog('Obtendo lista de cursos');
+    return this._cursos;
+  }
+
+  addCurso(curso: string) {
+    this._logService.consoleLog(`Criando um curso ${curso}`);
+    this._cursos.push(curso);
+    this.emitirCursoCriado.emit(curso);
   }
 }
