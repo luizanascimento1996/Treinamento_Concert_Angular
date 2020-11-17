@@ -4,6 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { LoginComponent } from './Rotas/login/login.component';
 import { RotasCursosComponent } from './Rotas/rotas-cursos/rotas-cursos.component';
 import { HomeComponent } from './Rotas/home/home.component';
+import { CursoDetalheComponent } from './Rotas/rotas-cursos/curso-detalhe/curso-detalhe.component';
 
 const routes: Routes = [
   {
@@ -11,8 +12,12 @@ const routes: Routes = [
     component: HomeComponent,
   },
   {
-    path: 'cursos/:id',
+    path: 'cursos',
     component: RotasCursosComponent,
+  },
+  {
+    path: 'curso/:id',
+    component: CursoDetalheComponent,
   },
   {
     path: 'login',

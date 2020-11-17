@@ -42,7 +42,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
-import { CursoDetalheComponent } from './Rotas/cursos/curso-detalhe/curso-detalhe.component';
 
 @NgModule({
   declarations: [
@@ -73,7 +72,6 @@ import { CursoDetalheComponent } from './Rotas/cursos/curso-detalhe/curso-detalh
     HomeComponent,
     LoginComponent,
     RotasCursosComponent,
-    CursoDetalheComponent,
   ],
   imports: [
     BrowserModule,
