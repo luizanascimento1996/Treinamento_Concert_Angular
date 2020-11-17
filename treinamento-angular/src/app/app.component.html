@@ -43,7 +43,10 @@
       <a mat-list-item routerLinkActive="active" routerLink="/cursos"
         ><span>Cursos</span></a
       >
-      <a mat-list-item routerLinkActive="active" [routerLink]="['/curso',idCurso.value]"
+      <a
+        mat-list-item
+        routerLinkActive="active"
+        [routerLink]="['/curso', idCurso.value]"
         ><span>Cursos com Id</span></a
       >
     </mat-nav-list>
@@ -52,8 +55,9 @@
 
 <div class="container">
   <p>Entre com o id do curso</p>
-  <input type="text" #idCurso>
-  <router-outlet></router-outlet></div>
+  <input type="text" (keyup)="(0)" #idCurso />
+  <router-outlet></router-outlet>
+</div>
 
 <!--
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
