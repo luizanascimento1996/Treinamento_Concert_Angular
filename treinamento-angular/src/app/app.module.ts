@@ -37,13 +37,11 @@ import { SettingsService } from './Pipes/settings.service';
 import { FiltroArrayPipe } from './Pipes/filtro-array.pipe';
 import { HomeComponent } from './Rotas/home/home.component';
 import { LoginComponent } from './Rotas/login/login.component';
-import { RotasCursosComponent } from './Rotas/rotas-cursos/rotas-cursos.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { RotasCursoSService } from './Rotas/rotas-cursos/rotas-curso-s.service';
 
+import { RotasCursosModule } from './Rotas/rotas-cursos/rotas-cursos.module';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
-import { CursoNaoEncontradoComponent } from './Rotas/rotas-cursos/curso-nao-encontrado/curso-nao-encontrado.component';
 
 @NgModule({
   declarations: [
@@ -73,8 +71,6 @@ import { CursoNaoEncontradoComponent } from './Rotas/rotas-cursos/curso-nao-enco
     FiltroArrayPipe,
     HomeComponent,
     LoginComponent,
-    RotasCursosComponent,
-    CursoNaoEncontradoComponent,
   ],
   imports: [
     BrowserModule,
@@ -83,13 +79,13 @@ import { CursoNaoEncontradoComponent } from './Rotas/rotas-cursos/curso-nao-enco
     FormsModule,
     CommonModule,
     BrowserAnimationsModule,
+    RotasCursosModule,
     MatSidenavModule,
     MatListModule,
   ],
   providers: [
     CursosService2,
     LogServiceService,
-    RotasCursoSService,
     /*{ provide: LOCALE_ID, useValue: 'en-US' },*/
     SettingsService,
     { provide: LOCALE_ID, useValue: 'en-US', deps: [SettingsService] },
