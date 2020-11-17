@@ -1,1 +1,9 @@
-<p>rotas-cursos works!</p>
+<p>Página: {{ pagina }}</p>
+<mat-list>
+  <mat-list-item
+    *ngFor="let curso of cursos"
+    [routerLink]="['/curso', curso.id]"
+  >
+    {{ curso.nome }}
+  </mat-list-item>
+</mat-list>

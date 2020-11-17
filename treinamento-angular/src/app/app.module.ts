@@ -39,9 +39,11 @@ import { HomeComponent } from './Rotas/home/home.component';
 import { LoginComponent } from './Rotas/login/login.component';
 import { RotasCursosComponent } from './Rotas/rotas-cursos/rotas-cursos.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { RotasCursoSService } from './Rotas/rotas-cursos/rotas-curso-s.service';
 
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
+import { CursoNaoEncontradoComponent } from './Rotas/rotas-cursos/curso-nao-encontrado/curso-nao-encontrado.component';
 
 @NgModule({
   declarations: [
@@ -72,6 +74,7 @@ import { MatListModule } from '@angular/material/list';
     HomeComponent,
     LoginComponent,
     RotasCursosComponent,
+    CursoNaoEncontradoComponent,
   ],
   imports: [
     BrowserModule,
@@ -86,6 +89,7 @@ import { MatListModule } from '@angular/material/list';
   providers: [
     CursosService2,
     LogServiceService,
+    RotasCursoSService,
     /*{ provide: LOCALE_ID, useValue: 'en-US' },*/
     SettingsService,
     { provide: LOCALE_ID, useValue: 'en-US', deps: [SettingsService] },
