@@ -29,9 +29,25 @@
 
 <app-criar-curso></app-criar-curso>-->
 
-<app-exemplos-pipes></app-exemplos-pipes>
+<!--<app-exemplos-pipes></app-exemplos-pipes>-->
 
-<router-outlet></router-outlet>
+<mat-sidenav-container>
+  <mat-sidenav class="sidenav" fixedInViewport="true" opened>
+    <mat-nav-list>
+      <a mat-list-item routerLinkActive="active" routerLink=""
+        ><span>Home</span></a
+      >
+      <a mat-list-item routerLinkActive="active" routerLink="/login'"
+        ><span>Login</span></a
+      >
+      <a mat-list-item routerLinkActive="active" routerLink="/cursos"
+        ><span>Cursos</span></a
+      >
+    </mat-nav-list>
+  </mat-sidenav>
+</mat-sidenav-container>
+
+<div class="container"><router-outlet></router-outlet></div>
 
 <!--
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">

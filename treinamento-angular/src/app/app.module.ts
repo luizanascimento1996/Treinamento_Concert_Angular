@@ -35,6 +35,14 @@ import { ExemplosPipesComponent } from './Pipes/exemplos-pipes/exemplos-pipes.co
 import { CamelCasePipe } from './Pipes/camel-case.pipe';
 import { SettingsService } from './Pipes/settings.service';
 import { FiltroArrayPipe } from './Pipes/filtro-array.pipe';
+import { HomeComponent } from './Rotas/home/home.component';
+import { LoginComponent } from './Rotas/login/login.component';
+import { RotasCursosComponent } from './Rotas/rotas-cursos/rotas-cursos.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatListModule } from '@angular/material/list';
+import { CursoDetalheComponent } from './Rotas/cursos/curso-detalhe/curso-detalhe.component';
 
 @NgModule({
   declarations: [
@@ -62,6 +70,10 @@ import { FiltroArrayPipe } from './Pipes/filtro-array.pipe';
     ExemplosPipesComponent,
     CamelCasePipe,
     FiltroArrayPipe,
+    HomeComponent,
+    LoginComponent,
+    RotasCursosComponent,
+    CursoDetalheComponent,
   ],
   imports: [
     BrowserModule,
@@ -69,6 +81,9 @@ import { FiltroArrayPipe } from './Pipes/filtro-array.pipe';
     CursosModule,
     FormsModule,
     CommonModule,
+    BrowserAnimationsModule,
+    MatSidenavModule,
+    MatListModule,
   ],
   providers: [
     CursosService2,

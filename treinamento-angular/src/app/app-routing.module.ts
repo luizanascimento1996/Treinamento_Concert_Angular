@@ -1,16 +1,22 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
+import { LoginComponent } from './Rotas/login/login.component';
+import { RotasCursosComponent } from './Rotas/rotas-cursos/rotas-cursos.component';
+import { HomeComponent } from './Rotas/home/home.component';
+
 const routes: Routes = [
   {
     path: '',
-    pathMatch: 'full',
-    redirectTo: 'cursos-bootstrap',
+    component: HomeComponent,
   },
   {
-    path: 'cursos-bootstrap',
-    loadChildren:
-      './cursos-bootstrap/cursos-bootstrap.module#CursosBootstrapModule ',
+    path: 'cursos/:id',
+    component: RotasCursosComponent,
+  },
+  {
+    path: 'login',
+    component: LoginComponent,
   },
 ];
 
