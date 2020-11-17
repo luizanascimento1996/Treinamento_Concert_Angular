@@ -12,7 +12,10 @@
 <h5>Pipes: Criando um Pipe "Puro"</h5>
 
 <ul>
-  <li *ngFor="let liv of livros" | filtroArray >
+  <li *ngFor="let liv of livros" | filtroArray>
     {{ liv }}
   </li>
 </ul>
+
+<h5>Pipes Async</h5>
+<p>{{ valorAsync | async }}</p>
