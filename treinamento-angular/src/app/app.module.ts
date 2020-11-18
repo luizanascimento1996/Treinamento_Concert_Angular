@@ -1,7 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, LOCALE_ID } from '@angular/core';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatListModule } from '@angular/material/list';
 import { registerLocaleData } from '@angular/common';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 import localePt from '@angular/common/locales/pt';
 registerLocaleData(localePt, 'pt');
 
@@ -9,7 +13,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MeuPrimeiroComponent } from './Funcionamento/meu-primeiro-component/meu-primeiro.component';
 import { MeuPrimeiroComponentCliComponent } from './Funcionamento/meu-primeiro-component-cli/meu-primeiro-component-cli.component';
-import { CursosModule } from './Funcionamento/cursos/cursos.module';
 import { DataBindingComponent } from './Funcionamento/data-binding/data-binding.component';
 import { FormsModule } from '@angular/forms';
 import { InputPropertyComponent } from './Funcionamento/input-property/input-property.component';
@@ -22,26 +25,28 @@ import { DiretivaNgclassComponent } from './Diretivas/diretiva-ngclass/diretiva-
 import { DiretivaNgstyleComponent } from './Diretivas/diretiva-ngstyle/diretiva-ngstyle.component';
 import { OperadorElvisComponent } from './Funcionamento/operador-elvis/operador-elvis.component';
 import { ExemploNgcontentComponent } from './Funcionamento/exemplo-ngcontent/exemplo-ngcontent.component';
-import { FundoAmareloDirective } from './shared/fundo-amarelo.directive';
 import { DiretivasCustomizadasComponent } from './Diretivas/diretivas-customizadas/diretivas-customizadas.component';
+
+import { FundoAmareloDirective } from './shared/fundo-amarelo.directive';
 import { HighlightMouseDirective } from './shared/highlight-mouse.directive';
 import { HighlightDirective } from './shared/highlight.directive';
 import { NgElseDirective } from './shared/ng-else.directive';
+import { LogServiceService } from './shared/log-service.service';
+
 import { CursosComponent } from './Servicos/cursos/cursos.component';
 import { CriarCursoComponent } from './Servicos/criar-curso/criar-curso.component';
 import { CursosService2 } from './Servicos/cursos.service';
-import { LogServiceService } from './shared/log-service.service';
+
 import { ExemplosPipesComponent } from './Pipes/exemplos-pipes/exemplos-pipes.component';
 import { CamelCasePipe } from './Pipes/camel-case.pipe';
 import { SettingsService } from './Pipes/settings.service';
 import { FiltroArrayPipe } from './Pipes/filtro-array.pipe';
+
 import { HomeComponent } from './Rotas/home/home.component';
 import { LoginComponent } from './Rotas/login/login.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { RotasCursosModule } from './Rotas/rotas-cursos/rotas-cursos.module';
-import { MatSidenavModule } from '@angular/material/sidenav';
-import { MatListModule } from '@angular/material/list';
+import { CursosModule } from './Funcionamento/cursos/cursos.module';
 
 @NgModule({
   declarations: [
