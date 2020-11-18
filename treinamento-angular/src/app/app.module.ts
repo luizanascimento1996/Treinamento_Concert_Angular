@@ -47,6 +47,7 @@ import { LoginComponent } from './Rotas/login/login.component';
 
 import { RotasCursosModule } from './Rotas/rotas-cursos/rotas-cursos.module';
 import { CursosModule } from './Funcionamento/cursos/cursos.module';
+import { AlunosComponent } from './alunos/alunos.component';
 
 @NgModule({
   declarations: [
@@ -76,6 +77,7 @@ import { CursosModule } from './Funcionamento/cursos/cursos.module';
     FiltroArrayPipe,
     HomeComponent,
     LoginComponent,
+    AlunosComponent,
   ],
   imports: [
     BrowserModule,
