@@ -31,24 +31,26 @@
 
 <!--<app-exemplos-pipes></app-exemplos-pipes>-->
 
-<mat-sidenav-container>
-  <mat-sidenav class="sidenav" fixedInViewport="true" opened>
-    <mat-nav-list>
-      <a mat-list-item routerLinkActive="active" routerLink=""
-        ><span>Home</span></a
-      >
-      <a mat-list-item routerLinkActive="active" routerLink="/login"
-        ><span>Login</span></a
-      >
-      <a mat-list-item routerLinkActive="active" routerLink="/cursos">
-        <span>Cursos</span></a
-      >
-      <a mat-list-item routerLinkActive="active" routerLink="/alunos"
-        ><span>Alunos</span></a
-      >
-    </mat-nav-list>
-  </mat-sidenav>
-</mat-sidenav-container>
+<nav *ngIf="mostrarMenu">
+  <mat-sidenav-container>
+    <mat-sidenav class="sidenav" fixedInViewport="true" opened>
+      <mat-nav-list>
+        <a mat-list-item routerLinkActive="active" routerLink=""
+          ><span>Home</span></a
+        >
+        <a mat-list-item routerLinkActive="active" routerLink="/login"
+          ><span>Login</span></a
+        >
+        <a mat-list-item routerLinkActive="active" routerLink="/cursos">
+          <span>Cursos</span></a
+        >
+        <a mat-list-item routerLinkActive="active" routerLink="/alunos"
+          ><span>Alunos</span></a
+        >
+      </mat-nav-list>
+    </mat-sidenav>
+  </mat-sidenav-container>
+</nav>
 
 <div class="container">
   <!--<p>Entre com o id do curso</p>

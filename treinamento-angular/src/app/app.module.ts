@@ -1,3 +1,4 @@
+import { AuthGuard } from './Rotas/guard/auth.guard';
 import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, LOCALE_ID } from '@angular/core';
@@ -103,6 +104,7 @@ import { MatButtonModule } from '@angular/material/button';
     /*{ provide: LOCALE_ID, useValue: 'en-US' },*/
     SettingsService,
     AuthService,
+    AuthGuard,
     { provide: LOCALE_ID, useValue: 'en-US', deps: [SettingsService] },
   ],
 

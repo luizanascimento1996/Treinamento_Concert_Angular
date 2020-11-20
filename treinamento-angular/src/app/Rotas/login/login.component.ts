@@ -9,7 +9,7 @@ import { Usuario } from './usuario';
   styleUrls: ['./login.component.scss'],
 })
 export class LoginComponent implements OnInit {
-  private usuario: Usuario = new Usuario();
+  usuario: Usuario = new Usuario();
   constructor(private _authService: AuthService) {}
 
   ngOnInit(): void {}
