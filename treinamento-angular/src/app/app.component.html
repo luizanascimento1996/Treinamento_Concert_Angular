@@ -37,22 +37,12 @@
       <a mat-list-item routerLinkActive="active" routerLink=""
         ><span>Home</span></a
       >
-      <a mat-list-item routerLinkActive="active" routerLink="/login'"
+      <a mat-list-item routerLinkActive="active" routerLink="/login"
         ><span>Login</span></a
       >
-      <a
-        mat-list-item
-        routerLinkActive="active"
-        routerLink="/cursos"
-        [queryParams]="{ pagina: 1 }"
-        ><span>Cursos</span></a
+      <a mat-list-item routerLinkActive="active" routerLink="/cursos">
+        <span>Cursos</span></a
       >
-      <!--<a
-        mat-list-item
-        routerLinkActive="active"
-        [routerLink]="['/curso', idCurso.value]"
-        ><span>Cursos com Id</span></a
-      >-->
       <a mat-list-item routerLinkActive="active" routerLink="/alunos"
         ><span>Alunos</span></a
       >
@@ -61,7 +51,6 @@
 </mat-sidenav-container>
 
 <div class="container">
-  <app-rotas-cursos></app-rotas-cursos>
   <!--<p>Entre com o id do curso</p>
   <input type="text" (keyup)="(0)" #idCurso />-->
   <router-outlet></router-outlet>

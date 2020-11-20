@@ -2,12 +2,7 @@
   "name": "treinamento-angular",
   "version": "0.0.0",
   "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e"
+    "postinstall": "ngcc"
   },
   "private": true,
   "dependencies": {
@@ -22,6 +17,7 @@
     "@angular/platform-browser-dynamic": "~10.2.0",
     "@angular/router": "~10.2.0",
     "angular": "^1.8.2",
+    "material-components-web": "^8.0.0",
     "materialize-css": "^1.0.0-rc.2",
     "ngx-bootstrap": "^6.2.0",
     "rxjs": "~6.6.0",
@@ -47,8 +43,5 @@
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
     "typescript": "~4.0.2"
-  },
-  "scripts": {
-    "postinstall": "ngcc"
   }
 }

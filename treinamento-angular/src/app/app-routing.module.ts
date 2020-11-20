@@ -6,6 +6,13 @@ import { LoginComponent } from './Rotas/login/login.component';
 
 const routes: Routes = [
   {
+    path: 'cursos',
+    loadChildren: () =>
+      import('./Rotas/rotas-cursos/rotas-cursos.module').then(
+        (mod) => mod.RotasCursosModule
+      ),
+  },
+  {
     path: '',
     component: HomeComponent,
   },
@@ -13,6 +20,7 @@ const routes: Routes = [
     path: 'login',
     component: LoginComponent,
   },
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
 ];
 
 @NgModule({

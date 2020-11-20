@@ -1,1 +1,27 @@
-<p>login works!</p>
+<h1>Login</h1>
+<mat-form-field appearance="fill">
+  <mat-label class="validate" for="usuario">Usuario</mat-label>
+  <input [(ngModel)]="usuario.nome" id="usuario" matInput />
+</mat-form-field>
+<br />
+<mat-form-field appearance="fill">
+  <mat-label for="senha">Senha</mat-label>
+  <input
+    [(ngModel)]="usuario.senha"
+    class="validate"
+    type="password"
+    id="senha"
+    matInput
+  />
+</mat-form-field>
+<br />
+
+<button
+  type="submit"
+  name="action"
+  mat-flat-button
+  color="primary"
+  (click)="fazLogin()"
+>
+  Submit
+</button>

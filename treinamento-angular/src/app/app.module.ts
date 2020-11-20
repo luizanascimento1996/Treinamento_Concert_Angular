@@ -44,10 +44,14 @@ import { FiltroArrayPipe } from './Pipes/filtro-array.pipe';
 
 import { HomeComponent } from './Rotas/home/home.component';
 import { LoginComponent } from './Rotas/login/login.component';
+import { AuthService } from './Rotas/login/auth.service';
 
 import { RotasCursosModule } from './Rotas/rotas-cursos/rotas-cursos.module';
 import { CursosModule } from './Funcionamento/cursos/cursos.module';
 import { AlunoModule } from './RotasFilhas/alunos.module';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -89,12 +93,16 @@ import { AlunoModule } from './RotasFilhas/alunos.module';
     MatSidenavModule,
     MatListModule,
     AlunoModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatButtonModule,
   ],
   providers: [
     CursosService2,
     LogServiceService,
     /*{ provide: LOCALE_ID, useValue: 'en-US' },*/
     SettingsService,
+    AuthService,
     { provide: LOCALE_ID, useValue: 'en-US', deps: [SettingsService] },
   ],
 

@@ -14,10 +14,6 @@ const rotasCursosRoutes: Routes = [
     component: RotasCursosComponent,
   },
   {
-    path: 'curso/:id',
-    component: CursoDetalheComponent,
-  },
-  {
     path: 'naoEncontrado',
     component: CursoNaoEncontradoComponent,
   },

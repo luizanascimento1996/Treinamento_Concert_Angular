@@ -1,1 +1,17 @@
-<p>aluno-form works!</p>
+<div class="container">
+  <h3>Criar/Editar Alunos</h3>
+  <mat-form-field appearance="fill">
+    <mat-label>ID</mat-label>
+    <input disabled matInput [(ngModel)]="aluno.id" />
+  </mat-form-field>
+  <br />
+  <mat-form-field appearance="fill">
+    <mat-label>Nome</mat-label>
+    <input [(ngModel)]="aluno.nome" matInput />
+  </mat-form-field>
+  <br />
+  <mat-form-field appearance="fill">
+    <mat-label>Email</mat-label>
+    <input [(ngModel)]="aluno.email" matInput />
+  </mat-form-field>
+</div>
