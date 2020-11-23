@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../../treinamento-angular/src/app/Funcionamento/output-property/output-property.component.scss"
+    ],
+    "names": [],
+    "file": "output-property.component.css"
+}

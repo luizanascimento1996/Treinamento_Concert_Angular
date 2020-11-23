@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../../treinamento-angular/src/app/Funcionamento/cursos/cursos-detalhes/cursos-detalhes.component.scss"
+    ],
+    "names": [],
+    "file": "cursos-detalhes.component.css"
+}

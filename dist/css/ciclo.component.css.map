@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../../treinamento-angular/src/app/Funcionamento/ciclo/ciclo.component.scss"
+    ],
+    "names": [],
+    "file": "ciclo.component.css"
+}

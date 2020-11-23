@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../../treinamento-angular/src/app/Funcionamento/cursos/cursos-bootstrap/cursos-lista/cursos-lista.component.scss"
+    ],
+    "names": [],
+    "file": "cursos-lista.component.css"
+}

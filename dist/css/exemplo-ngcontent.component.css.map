@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../../treinamento-angular/src/app/Funcionamento/exemplo-ngcontent/exemplo-ngcontent.component.scss"
+    ],
+    "names": [],
+    "file": "exemplo-ngcontent.component.css"
+}

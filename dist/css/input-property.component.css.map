@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../../treinamento-angular/src/app/Funcionamento/input-property/input-property.component.scss"
+    ],
+    "names": [],
+    "file": "input-property.component.css"
+}

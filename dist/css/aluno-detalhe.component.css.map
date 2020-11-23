@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../../treinamento-angular/src/app/RotasFilhas/aluno-detalhe/aluno-detalhe.component.scss"
+    ],
+    "names": [],
+    "file": "aluno-detalhe.component.css"
+}

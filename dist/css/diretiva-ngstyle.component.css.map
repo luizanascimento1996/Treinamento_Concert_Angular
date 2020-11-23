@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../../treinamento-angular/src/app/Diretivas/diretiva-ngstyle/diretiva-ngstyle.component.scss"
+    ],
+    "names": [],
+    "file": "diretiva-ngstyle.component.css"
+}

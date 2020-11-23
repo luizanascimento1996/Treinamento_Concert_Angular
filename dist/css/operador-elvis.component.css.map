@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../../treinamento-angular/src/app/Funcionamento/operador-elvis/operador-elvis.component.scss"
+    ],
+    "names": [],
+    "file": "operador-elvis.component.css"
+}

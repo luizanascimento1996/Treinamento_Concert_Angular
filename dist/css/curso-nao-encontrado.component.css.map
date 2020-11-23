@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../../treinamento-angular/src/app/Rotas/rotas-cursos/curso-nao-encontrado/curso-nao-encontrado.component.scss"
+    ],
+    "names": [],
+    "file": "curso-nao-encontrado.component.css"
+}

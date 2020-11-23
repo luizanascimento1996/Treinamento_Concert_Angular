@@ -1,27 +1,18 @@
 namespace treinamento_csharp.exemplos{
-    public class Carro
+    public class Carro : Veiculo
     {
-        public Carro(string cor){
-            this.cor = cor;
-        }
-        private string _cor;
-        public string cor { 
-            get
-            {
-                return _cor;
-            } 
-            set
-            {
-                _cor = value;
-            } 
-            }
-        string marca { get; set; }
-        string modelo { get; set; }
-        public string verificaSituacaoDetran(string placa)
-    {
-        return "Carro Ok";
-    }
-    }
+        private int numeroEixos { get; set; }
 
-   
+        public Carro(string cor, string placa, string modelo, string marca) : base(placa, cor, modelo, marca)
+        {
+        }
+        public Carro(){
+            
+        }
+        public override int QuantidadeDePneus()
+        {
+            return numeroEixos * 2;
+        }
+
+    }
 }

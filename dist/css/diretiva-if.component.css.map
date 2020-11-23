@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../../treinamento-angular/src/app/Diretivas/diretiva-if/diretiva-if.component.scss"
+    ],
+    "names": [],
+    "file": "diretiva-if.component.css"
+}

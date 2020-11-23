@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,UAAU,CAAC;EACT,gBAAgB,EAAE,MAAM;EACxB,WAAW,EAAE,IAAI;CAClB",
+    "sources": [
+        "../../treinamento-angular/src/app/Funcionamento/data-binding/data-binding.component.scss"
+    ],
+    "names": [],
+    "file": "data-binding.component.css"
+}

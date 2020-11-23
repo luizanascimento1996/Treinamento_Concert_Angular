@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../../treinamento-angular/src/app/Funcionamento/meu-primeiro-component-cli/meu-primeiro-component-cli.component.scss"
+    ],
+    "names": [],
+    "file": "meu-primeiro-component-cli.component.css"
+}
