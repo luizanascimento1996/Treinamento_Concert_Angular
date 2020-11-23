@@ -1,9 +1,9 @@
+import { AlunosGuard } from './alunos.guard';
 import { AlunoFormComponent } from './aluno-form/aluno-form.component';
 import { AlunoDetalheComponent } from './aluno-detalhe/aluno-detalhe.component';
 import { AlunosComponent } from './alunos/alunos.component';
 import { Routes, RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
-
 
 //escrever url http://localhost:4200/alunos/novo, para ver o pai e filho funcionando
 const alunosRoutes: Routes = [
@@ -16,7 +16,11 @@ const alunosRoutes: Routes = [
         component: AlunoFormComponent,
       },
       { path: ':id', component: AlunoDetalheComponent },
-      { path: ':id/editar', component: AlunoFormComponent },
+      {
+        path: ':id/editar',
+        component: AlunoFormComponent,
+        canActivateChild: [AlunosGuard]
+      },
     ],
   },
 ];

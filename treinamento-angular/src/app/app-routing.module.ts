@@ -4,6 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './Rotas/home/home.component';
 import { LoginComponent } from './Rotas/login/login.component';
 import { AuthGuard } from './Rotas/guard/auth.guard';
+import { RotasCursoGuardGuard } from './Rotas/guard/rotas-curso-guard.guard';
 
 const routes: Routes = [
   {

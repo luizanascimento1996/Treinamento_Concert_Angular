@@ -53,6 +53,7 @@ import { AlunoModule } from './RotasFilhas/alunos.module';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
+import { RotasCursoGuardGuard } from './Rotas/guard/rotas-curso-guard.guard';
 
 @NgModule({
   declarations: [
@@ -105,6 +106,7 @@ import { MatButtonModule } from '@angular/material/button';
     SettingsService,
     AuthService,
     AuthGuard,
+    RotasCursoGuardGuard,
     { provide: LOCALE_ID, useValue: 'en-US', deps: [SettingsService] },
   ],
 
