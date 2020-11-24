@@ -1,8 +1,56 @@
 {
   "version": 2,
-  "dgSpecHash": "Cpwpg2R3Ks94wgtqG4CFLn+DzGAlbCqCkXDtrAJY5WowDz7YFd6XoQliA8ZgVYrmbIGpN0QZ/GWIJ78gKqGUgg==",
+  "dgSpecHash": "gAla+mUZ/5gD5conlTFmjAjFNBJ1nVRXNYzjXn8ppBvS1jbrdHr3Hp814F5IB3zHJPa/TwWiKFJRqSLvYT0pHw==",
   "success": true,
   "projectFilePath": "C:\\workspace\\Treinamento_Concert_Angular\\treinamento-csharp2\\VeiculosAPI\\VeiculosAPI.csproj",
-  "expectedPackageFiles": [],
-  "logs": []
+  "expectedPackageFiles": [
+    "C:\\Users\\luiza.nascimento\\.nuget\\packages\\automapper\\8.0.0\\automapper.8.0.0.nupkg.sha512",
+    "C:\\Users\\luiza.nascimento\\.nuget\\packages\\automapper.collection\\5.0.0\\automapper.collection.5.0.0.nupkg.sha512",
+    "C:\\Users\\luiza.nascimento\\.nuget\\packages\\commons.core\\2.0.1\\commons.core.2.0.1.nupkg.sha512",
+    "C:\\Users\\luiza.nascimento\\.nuget\\packages\\microsoft.csharp\\4.6.0\\microsoft.csharp.4.6.0.nupkg.sha512",
+    "C:\\Users\\luiza.nascimento\\.nuget\\packages\\microsoft.entityframeworkcore\\3.0.0\\microsoft.entityframeworkcore.3.0.0.nupkg.sha512",
+    "C:\\Users\\luiza.nascimento\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\3.0.0\\microsoft.entityframeworkcore.abstractions.3.0.0.nupkg.sha512",
+    "C:\\Users\\luiza.nascimento\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\3.0.0\\microsoft.entityframeworkcore.analyzers.3.0.0.nupkg.sha512",
+    "C:\\Users\\luiza.nascimento\\.nuget\\packages\\microsoft.entityframeworkcore.design\\3.0.0\\microsoft.entityframeworkcore.design.3.0.0.nupkg.sha512",
+    "C:\\Users\\luiza.nascimento\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\3.0.0\\microsoft.entityframeworkcore.relational.3.0.0.nupkg.sha512",
+    "C:\\Users\\luiza.nascimento\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\3.0.0\\microsoft.extensions.caching.abstractions.3.0.0.nupkg.sha512",
+    "C:\\Users\\luiza.nascimento\\.nuget\\packages\\microsoft.extensions.caching.memory\\3.0.0\\microsoft.extensions.caching.memory.3.0.0.nupkg.sha512",
+    "C:\\Users\\luiza.nascimento\\.nuget\\packages\\microsoft.extensions.configuration\\3.0.0\\microsoft.extensions.configuration.3.0.0.nupkg.sha512",
+    "C:\\Users\\luiza.nascimento\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\3.0.0\\microsoft.extensions.configuration.abstractions.3.0.0.nupkg.sha512",
+    "C:\\Users\\luiza.nascimento\\.nuget\\packages\\microsoft.extensions.configuration.binder\\3.0.0\\microsoft.extensions.configuration.binder.3.0.0.nupkg.sha512",
+    "C:\\Users\\luiza.nascimento\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\3.0.0\\microsoft.extensions.dependencyinjection.3.0.0.nupkg.sha512",
+    "C:\\Users\\luiza.nascimento\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\3.0.0\\microsoft.extensions.dependencyinjection.abstractions.3.0.0.nupkg.sha512",
+    "C:\\Users\\luiza.nascimento\\.nuget\\packages\\microsoft.extensions.logging\\3.0.0\\microsoft.extensions.logging.3.0.0.nupkg.sha512",
+    "C:\\Users\\luiza.nascimento\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\3.0.0\\microsoft.extensions.logging.abstractions.3.0.0.nupkg.sha512",
+    "C:\\Users\\luiza.nascimento\\.nuget\\packages\\microsoft.extensions.options\\3.0.0\\microsoft.extensions.options.3.0.0.nupkg.sha512",
+    "C:\\Users\\luiza.nascimento\\.nuget\\packages\\microsoft.extensions.primitives\\3.0.0\\microsoft.extensions.primitives.3.0.0.nupkg.sha512",
+    "C:\\Users\\luiza.nascimento\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\luiza.nascimento\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
+    "C:\\Users\\luiza.nascimento\\.nuget\\packages\\npgsql\\4.1.5\\npgsql.4.1.5.nupkg.sha512",
+    "C:\\Users\\luiza.nascimento\\.nuget\\packages\\system.collections.immutable\\1.6.0\\system.collections.immutable.1.6.0.nupkg.sha512",
+    "C:\\Users\\luiza.nascimento\\.nuget\\packages\\system.componentmodel.annotations\\4.6.0\\system.componentmodel.annotations.4.6.0.nupkg.sha512",
+    "C:\\Users\\luiza.nascimento\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.6.0\\system.diagnostics.diagnosticsource.4.6.0.nupkg.sha512",
+    "C:\\Users\\luiza.nascimento\\.nuget\\packages\\system.io\\4.3.0\\system.io.4.3.0.nupkg.sha512",
+    "C:\\Users\\luiza.nascimento\\.nuget\\packages\\system.reflection\\4.3.0\\system.reflection.4.3.0.nupkg.sha512",
+    "C:\\Users\\luiza.nascimento\\.nuget\\packages\\system.reflection.emit\\4.3.0\\system.reflection.emit.4.3.0.nupkg.sha512",
+    "C:\\Users\\luiza.nascimento\\.nuget\\packages\\system.reflection.emit.ilgeneration\\4.3.0\\system.reflection.emit.ilgeneration.4.3.0.nupkg.sha512",
+    "C:\\Users\\luiza.nascimento\\.nuget\\packages\\system.reflection.primitives\\4.3.0\\system.reflection.primitives.4.3.0.nupkg.sha512",
+    "C:\\Users\\luiza.nascimento\\.nuget\\packages\\system.runtime\\4.3.0\\system.runtime.4.3.0.nupkg.sha512",
+    "C:\\Users\\luiza.nascimento\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.6.0\\system.runtime.compilerservices.unsafe.4.6.0.nupkg.sha512",
+    "C:\\Users\\luiza.nascimento\\.nuget\\packages\\system.text.encoding\\4.3.0\\system.text.encoding.4.3.0.nupkg.sha512",
+    "C:\\Users\\luiza.nascimento\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512",
+    "C:\\Users\\luiza.nascimento\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.2\\system.threading.tasks.extensions.4.5.2.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "VeiculosAPI depende de Commons.Core (>= 2.0.0), mas Commons.Core 2.0.0 não foi encontrado. A melhor correspondência aproximada de Commons.Core 2.0.1 foi resolvida.",
+      "libraryId": "Commons.Core",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    }
+  ]
 }

@@ -18,7 +18,7 @@ namespace VeiculosAPI
         }
 
         public static IWebHostBuilder CreateHostBuilder(string[] args) {
-            var host = Enviroment.GetEnviromentVariable("DEFAULT_Host");
+            var host = Environment.GetEnvironmentVariable("DEFAULT_Host");
             return WebHost.CreateDefaultBuilder(args).UseUrls(args != null && args.Length > 0 ? args[0] : "http://0.0.0.0:5000").UseStartup<Startup>();
         }
             
