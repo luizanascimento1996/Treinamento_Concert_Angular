@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\workspace\\Treinamento_Concert_Angular\\treinamento-csharp\\treinamento-csharp.csproj": {}
+    "C:\\workspace\\Treinamento_Concert_Angular\\treinamento-csharp2\\VeiculosAPI\\VeiculosAPI.csproj": {}
   },
   "projects": {
-    "C:\\workspace\\Treinamento_Concert_Angular\\treinamento-csharp\\treinamento-csharp.csproj": {
+    "C:\\workspace\\Treinamento_Concert_Angular\\treinamento-csharp2\\VeiculosAPI\\VeiculosAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\workspace\\Treinamento_Concert_Angular\\treinamento-csharp\\treinamento-csharp.csproj",
-        "projectName": "treinamento-csharp",
-        "projectPath": "C:\\workspace\\Treinamento_Concert_Angular\\treinamento-csharp\\treinamento-csharp.csproj",
+        "projectUniqueName": "C:\\workspace\\Treinamento_Concert_Angular\\treinamento-csharp2\\VeiculosAPI\\VeiculosAPI.csproj",
+        "projectName": "VeiculosAPI",
+        "projectPath": "C:\\workspace\\Treinamento_Concert_Angular\\treinamento-csharp2\\VeiculosAPI\\VeiculosAPI.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\workspace\\Treinamento_Concert_Angular\\treinamento-csharp\\obj\\",
+        "outputPath": "C:\\workspace\\Treinamento_Concert_Angular\\treinamento-csharp2\\VeiculosAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -46,6 +46,9 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
