@@ -14,6 +14,7 @@ namespace VeiculosAPI.Entities
         public Veiculo(){
           
         }
+        
         [Key]
         [Required]
        

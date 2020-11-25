@@ -15,5 +15,7 @@ namespace VeiculosAPI.Entities
         {
             return numeroEixos * 1;
         }
+
+        public int CapotesDoGustavao { get; set; }
     }
 }
