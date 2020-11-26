@@ -31,6 +31,23 @@ namespace VeiculosAPI.DAO{
             }
         }
 
+        public List<Moto> GetAllMotos()
+        {
+            try
+            {
+                using(VeiculosContext ctx =  new VeiculosContext())
+                {
+                    var query =  ctx.Moto;
+                    return query.ToList<Moto>();
+                }
+            }
+            catch (System.Exception)
+            {
+                
+                throw;
+            }
+        }
+
         public List<Moto> AddAllMotos(List<Moto> motos){
             try{                
                 using(VeiculosContext ctx = new VeiculosContext()){
@@ -47,25 +64,15 @@ namespace VeiculosAPI.DAO{
             }
         }
 
-        /*public Moto DeleteMoto(long id){
+        public Moto DeleteMoto(long id){
+            return null;
 
         }
 
         public Moto UpdateMoto(Moto moto, long id){
-            try
-            {
-               using(VeiculosContext ctx = new VeiculosContext()){
-                   foreach (var moto in motos)
-                   {
-                       var motoToUpdate = ctx.Moto.Where(m => )
-                   }
-               } 
-            }
-            catch (System.Exception ex)
-            {               
-                throw ex;
-            }
 
-        }*/
+            return null;
+
+        }
     }
 }
