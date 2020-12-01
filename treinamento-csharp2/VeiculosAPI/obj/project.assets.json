@@ -1573,7 +1573,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\User\\.nuget\\packages\\": {}
+    "C:\\Users\\luiza.nascimento\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
@@ -1581,11 +1581,11 @@
       "projectUniqueName": "C:\\workspace\\Treinamento_Concert_Angular\\treinamento-csharp2\\VeiculosAPI\\VeiculosAPI.csproj",
       "projectName": "VeiculosAPI",
       "projectPath": "C:\\workspace\\Treinamento_Concert_Angular\\treinamento-csharp2\\VeiculosAPI\\VeiculosAPI.csproj",
-      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\luiza.nascimento\\.nuget\\packages\\",
       "outputPath": "C:\\workspace\\Treinamento_Concert_Angular\\treinamento-csharp2\\VeiculosAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\luiza.nascimento\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"

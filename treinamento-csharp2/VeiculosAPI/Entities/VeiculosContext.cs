@@ -21,6 +21,7 @@ namespace VeiculosAPI.Entities
                 
         public virtual DbSet<Caminhao> Caminhao { get; set; }
 
+        
 
        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {            

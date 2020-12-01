@@ -42,8 +42,7 @@ namespace VeiculosAPI.DAO{
                 }
             }
             catch (System.Exception)
-            {
-                
+            {               
                 throw;
             }
         }

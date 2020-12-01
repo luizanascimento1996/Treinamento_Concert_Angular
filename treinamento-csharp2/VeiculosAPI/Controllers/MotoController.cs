@@ -13,17 +13,33 @@ namespace VeiculosAPI.Controllers
     [ApiController]
     [Route("[controller]")]
     public class MotoController : ControllerBase{
+        VeiculosContext ctx = new VeiculosContext();
+        MotoDAO motosDAO = new MotoDAO();
         public MotoController(){
 
         }
+
+        /*[HttpGet]
+        public ActionResult<Moto> GetAllMotos()
+        {
+            try
+            {
+                //motos = motoDAO.GetAllMotos();
+                //return Ok(motos);
+            }
+            catch (Exception e)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, e.Message);
+            }
+        }*/
 
         [HttpGet("{id}")]
         public virtual ActionResult<Moto> GetOne(long id)
         {
             try
             {
-               var moto = new MotoDAO().GetMotos(id);
-               return Ok();
+               var moto = motosDAO.GetMotos(id);
+                return Ok(moto);
             }
             catch (Exception e)
             {
@@ -33,12 +49,12 @@ namespace VeiculosAPI.Controllers
         }
 
         [HttpPost]
-        /*public virtual ActionResult<Moto> Post([FromBody] Moto moto)
+        public virtual ActionResult<Moto> Post([FromBody] Moto moto)
         {
             try
             {
-                //var mt = MotoDAO.AddMotos(moto);
-                //return Ok(mt);
+                var mt = motosDAO.AddMotos(moto);
+                return Ok(mt);
             }
             catch (System.Exception)
             {
@@ -46,7 +62,12 @@ namespace VeiculosAPI.Controllers
                 throw;
             }
            
-        }*/
+        }
+        [HttpPut]
+        public ActionResult<Moto> Put(){
+            return null;
+
+        }
 
         [HttpDelete("{id}")]
         public virtual ActionResult Delete(long id){
@@ -63,19 +84,7 @@ namespace VeiculosAPI.Controllers
             }
         }
 
-        [HttpGet]
-        public ActionResult<Moto> GetAllMotos()
-        {
-            try
-            {
-                motos = motoDAO.GetAllMotos();
-                return Ok(motos);
-            }
-            catch (Exception e)
-            {
-                return StatusCode(StatusCodes.Status500InternalServerError, e.Message);
-            }
-        }
+        
     }
 
 }
